@@ -23,6 +23,6 @@ int main()
    for( n = 0 ; n < 5; n++ ) {
       printf("%d ", values[n]);
    }
-  
+  printf*"This is end of program\n"); 
   return(0);
 }
