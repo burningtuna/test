@@ -5,7 +5,7 @@ int values[] = { 88, 56, 100, 2, 25 };
 
 int cmpfunc (const void * a, const void * b)
 {
-   return ( *(int*)a - *(int*)b );
+	return ( *(int*)b - *(int*)a );	
 }
 
 int main()
@@ -13,9 +13,9 @@ int main()
    int n;
 
    printf("Before sorting the list is: \n");
-   for( n = 0 ; n < 5; n++ ) {
-      printf("%d ", values[n]);
-   }
+ //  for( n = 0 ; n < 5; n++ ) {
+ //     printf("%d ", values[n]);
+ //  }
 
    qsort(values, 5, sizeof(int), cmpfunc);
 
@@ -23,6 +23,6 @@ int main()
    for( n = 0 ; n < 5; n++ ) {
       printf("%d ", values[n]);
    }
-  printf*"This is end of program\n"); 
+  printf("This is end of program and need to merge\n"); 
   return(0);
 }
