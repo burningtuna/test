@@ -11,11 +11,15 @@ int cmpfunc (const void * a, const void * b)
 int main()
 {
    int n;
+   int sum;
 
+   sum = 0;
+   
    printf("Before sorting the list is: \n");
- //  for( n = 0 ; n < 5; n++ ) {
- //     printf("%d ", values[n]);
- //  }
+   for( n = 0 ; n < 5; n++ ) {
+//      printf("%d ", values[n]);
+	  sum = sum + values[n];
+   }
 
    qsort(values, 5, sizeof(int), cmpfunc);
 
@@ -23,6 +27,8 @@ int main()
    for( n = 0 ; n < 5; n++ ) {
       printf("%d ", values[n]);
    }
-  printf("This is end of program and need to merge\n"); 
+  printf("This is end of program\n"); 
+  printf("I need print more status \n", sum); 
+  // remove syntax error;
   return(0);
 }
